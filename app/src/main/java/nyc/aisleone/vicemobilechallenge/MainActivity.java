@@ -1,17 +1,22 @@
 package nyc.aisleone.vicemobilechallenge;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.tabs.TabLayout;
 
 public class
 MainActivity extends AppCompatActivity {
+
+  private ActionBar actionBar;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
+    actionBar = getSupportActionBar();
 
     MovieFragmentPagerAdapter adapter = new MovieFragmentPagerAdapter(this,getSupportFragmentManager());
 

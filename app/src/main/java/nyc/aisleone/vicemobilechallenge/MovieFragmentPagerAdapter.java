@@ -1,9 +1,10 @@
 package nyc.aisleone.vicemobilechallenge;
 
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
+
 import android.view.View;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
 
 public class MovieFragmentPagerAdapter extends PagerAdapter {
 
@@ -17,7 +18,7 @@ public class MovieFragmentPagerAdapter extends PagerAdapter {
     return 0;
   }
 
-  @Override public boolean isViewFromObject(@NonNull View view, @NonNull Object o) {
+  @Override public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
     return false;
   }
 }
